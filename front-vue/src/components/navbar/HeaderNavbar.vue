@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-import Socials from './Socials.vue'
 import RouterLinks from './RouterLinks.vue'
 import HeaderContainer from '@/components/common/HeaderContainer.vue'
 import Logo from './Logo.vue'
@@ -28,9 +27,8 @@ const handleMenuClose = () => {
 
 <template>
   <HeaderContainer>
-    <RouterLinks />
     <Logo />
-    <Socials />
+    <RouterLinks />
 
     <ResponsiveMenu :isOpen="isOpen" @setIsOpen="setIsOpen" @handleMenuClose="handleMenuClose" />
   </HeaderContainer>

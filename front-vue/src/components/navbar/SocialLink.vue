@@ -18,7 +18,7 @@ const { iconName } = toRefs(props)
 
 <template>
   <div
-    class="flex items-center justify-center w-11 h-11 bg-white rounded-full transition linear duration-300 hover:scale-[1.05]"
+    class="flex-[0_0_44px] flex items-center justify-center w-11 h-11 bg-white rounded-full transition linear duration-300 relative hover:scale-[1.05] hover:top-0.5"
   >
     <a :href="href" class="flex items-center size-10" :target="target" :rel="rel">
       <SocialIcon :iconName="iconName" />

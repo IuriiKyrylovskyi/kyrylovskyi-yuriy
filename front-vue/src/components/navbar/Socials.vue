@@ -5,6 +5,13 @@ import { ref } from 'vue'
 import { IconNames } from '@/interfaces/navbar'
 
 import SocialLink from './SocialLink.vue'
+import { toRefs } from 'vue'
+
+const props = defineProps<{
+  isColumn?: boolean
+}>()
+
+const { isColumn } = toRefs(props)
 
 const socialLinks = ref([
   {
@@ -28,10 +35,16 @@ const socialLinks = ref([
     iconName: IconNames.WHATSAPP
   }
 ])
+
+const wrapClass = ref(
+  isColumn.value
+    ? 'social-links hidden sm:flex sm:flex-col sm:gap-6'
+    : 'social-links justify-end flex gap-4 flex-wrap'
+)
 </script>
 
 <template>
-  <div className="links-container social-links hidden justify-end md:flex gap-4">
+  <div :class="wrapClass">
     <SocialLink
       v-for="s in socialLinks"
       :key="s.href"
@@ -42,3 +55,10 @@ const socialLinks = ref([
     />
   </div>
 </template>
+
+<style>
+.social-links svg {
+  max-width: 40px;
+  max-height: 40px;
+}
+</style>

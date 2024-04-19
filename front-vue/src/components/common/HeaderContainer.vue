@@ -9,9 +9,3 @@
     </div>
   </header>
 </template>
-
-<style>
-.links-container {
-  flex: 0 0 calc(50% - 50px);
-}
-</style>

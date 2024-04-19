@@ -1,3 +1,8 @@
+<script setup lang="ts">
+import { Routes } from '@/interfaces/global'
+import { RouterLink } from 'vue-router'
+</script>
+
 <template>
   <div class="h-1/2 lg:h-full lg:w-1/2 relative">
     <img src="@/assets/images/hero.png" alt="" fill class="object-contain" />
@@ -12,8 +17,16 @@
       reflect my commitment to excellence.
     </p>
     <div class="w-full flex gap-4">
-      <button class="p-4 rounded-lg ring-1 ring-black bg-black text-white">View My Work</button>
-      <button class="p-4 rounded-lg ring-1 ring-black">Contact Me</button>
+      <button
+        class="p-4 rounded-lg ring-1 ring-[#e5e7eb] bg-black text-white transition duration-300 linear hover:bg-white hover:text-black hover:animate-none"
+      >
+        <RouterLink :to="Routes.PORTFOLIO">View My Works</RouterLink>
+      </button>
+      <button
+        class="p-4 rounded-lg ring-1 ring-[#e5e7eb] bg-black text-white animate-pulse transition duration-300 linear hover:bg-white hover:text-black hover:animate-none"
+      >
+        <RouterLink :to="Routes.CONTACT">Contact Me</RouterLink>
+      </button>
     </div>
   </div>
 </template>

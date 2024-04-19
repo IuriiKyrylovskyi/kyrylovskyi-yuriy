@@ -3,7 +3,7 @@ import { appLinks } from '@/utils/constants'
 </script>
 
 <template>
-  <nav className="links-container hidden md:flex gap-4">
+  <nav className="hidden md:flex gap-4">
     <RouterLink
       v-for="l in appLinks"
       :to="l.url"

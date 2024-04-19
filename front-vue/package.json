@@ -13,6 +13,7 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@formkit/vue": "^1.6.2",
     "@oku-ui/motion": "^0.3.4",
     "@vueuse/core": "^10.9.0",
     "@vueuse/shared": "^10.9.0",

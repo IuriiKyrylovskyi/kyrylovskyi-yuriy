@@ -8,10 +8,10 @@ const year = ref(new Date().getFullYear())
   <p class="flex justify-center flex-wrap gap-2 text-xl">
     <span class="glow font-bold">
       <a href="https://www.upwork.com/agencies/1709532203564163072/" target="_blank" rel="noopener"
-        >JACK STUDIO</a
+        >KY / JACK STUDIO</a
       >
     </span>
-    {{ year }} © Made with
+    {{ year }} © Crafted with
     <img class="size-8" src="@/assets/images/heart.jpeg" />
   </p>
 </template>

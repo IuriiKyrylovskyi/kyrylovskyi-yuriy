@@ -1,29 +1,18 @@
+<script setup lang="ts">
+import PageContainer from '../common/PageContainer.vue'
+import Footer from '../footer/Footer.vue'
+import HeaderNavbar from '../navbar/HeaderNavbar.vue'
+</script>
+
 <template>
-  <header>
-    <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/about">About</RouterLink>
-      <RouterLink to="/me">Me</RouterLink>
-    </nav>
-  </header>
+  <HeaderNavbar />
 
-  <main>
-    <RouterView />
-
-    <slot />
+  <main class="min-h-screen pt-[90px] flex items-center">
+    <PageContainer>
+      <RouterView />
+      <slot />
+    </PageContainer>
   </main>
 
-  <footer>footer</footer>
+  <Footer />
 </template>
-
-<script setup lang="ts"></script>
-
-<style scoped>
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
-</style>

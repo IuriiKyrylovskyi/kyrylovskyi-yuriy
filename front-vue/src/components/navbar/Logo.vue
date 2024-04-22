@@ -12,9 +12,6 @@ import { Routes } from '@/interfaces/global'
       <span>K</span>
       <img src="@/assets/logo-black.jpeg" alt="Yurii Kyrylovskyi logo" />
       <span>Y</span>
-      <!-- <video loop autoplay muted>
-        <source src="@/assets/ky-logo-video-black.mp4" type="video/mp4" />
-      </video> -->
     </RouterLink>
   </div>
 </template>

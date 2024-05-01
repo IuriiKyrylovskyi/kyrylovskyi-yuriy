@@ -4,6 +4,8 @@ import { ref } from 'vue'
 import SkillBox from './SkillBox.vue'
 import { Skills, type ISkill } from '@/interfaces/skill'
 
+const links = ref(Object.values(Skills))
+
 // set images into public folder
 const skills = ref([
   {
@@ -62,5 +64,6 @@ const skills = ref([
 <template>
   <div class="flex gap-4 flex-wrap">
     <SkillBox v-for="s in skills" :key="s.link" :skill="s" />
+    <div v-for="l in links" :key="l">{{ l }}</div>
   </div>
 </template>

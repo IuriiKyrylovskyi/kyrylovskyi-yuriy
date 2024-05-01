@@ -3,5 +3,6 @@ export enum IconNames {
   GMAIL = 'gmail',
   LINKEDIN = 'linkedin',
   VIBER = 'vider',
-  WHATSAPP = 'whatsapp'
+  WHATSAPP = 'whatsapp',
+  TELEGRAM = 'telegram'
 }

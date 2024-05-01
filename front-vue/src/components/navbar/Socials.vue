@@ -27,7 +27,8 @@ const socialLinks = ref([
     rel: 'noreferrer',
     iconName: IconNames.LINKEDIN
   },
-  { href: 'viber://add?number=+380662053544', target: '', rel: '', iconName: IconNames.VIBER },
+  { href: 'viber://chat?number=%2B380662053544', target: '', rel: '', iconName: IconNames.VIBER },
+  { href: 'https://t.me/iurii712', target: '', rel: '', iconName: IconNames.TELEGRAM },
   {
     href: 'https://api.whatsapp.com/send?phone=380662053544',
     target: '_blank',

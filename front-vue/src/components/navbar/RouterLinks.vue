@@ -15,15 +15,37 @@ import { appLinks } from '@/utils/constants'
 </template>
 
 <style scoped>
+a {
+  border: 1px solid #000000;
+}
+
 a.router-link-exact-active {
   color: #000000;
   background-color: #ffffff;
+}
+
+/* // help Ukraine */
+a:last-child {
+  color: rgb(0, 115, 255);
+  background-color: yellow;
+  font-weight: bold;
+}
+
+a[href='/help'].router-link-exact-active {
+  border: 1px solid white;
+  color: yellow;
+  background-color: rgb(0, 115, 255);
 }
 
 @media (hover: hover) {
   a:hover {
     color: #000000;
     background-color: hsla(0, 0%, 100%, 0.8);
+  }
+
+  a:last-child:hover {
+    color: yellow;
+    background-color: rgb(0, 115, 255);
   }
 }
 </style>

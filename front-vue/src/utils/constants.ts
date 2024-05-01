@@ -5,5 +5,6 @@ export const appLinks = [
   { url: Routes.ABOUT, title: RouteNames.ABOUT },
   { url: Routes.SKILLS, title: RouteNames.SKILLS },
   { url: Routes.PORTFOLIO, title: RouteNames.PORTFOLIO },
-  { url: Routes.CONTACT, title: RouteNames.CONTACT }
+  { url: Routes.CONTACT, title: RouteNames.CONTACT },
+  { url: Routes.HELP, title: RouteNames.HELP }
 ]

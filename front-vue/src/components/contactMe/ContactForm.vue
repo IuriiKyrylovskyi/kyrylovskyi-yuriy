@@ -1,6 +1,38 @@
 <script setup lang="ts">
 import { FormKit } from '@formkit/vue'
 
+// interface IData {
+//   text: string
+//   email: string
+// }
+
+// const sendEmail = async (data: IData) => {
+//   try {
+//     const emailResponse = await fetch(`${locale}/api/send-email`, {
+//       method: 'POST',
+//       headers: {
+//         Accept: 'application/json, text/plain, */*',
+//         'Content-Type': 'application/json'
+//       },
+//       body: JSON.stringify({
+//         subject: 'Customer request list',
+//         to: 'iurii712@ukr.net',
+//         bookingData: data
+//       })
+//     })
+
+//     // handle sendEmail error
+//     if (!emailResponse.ok) {
+//       throw new Error()
+//     }
+
+//     return true
+//   } catch (error: IErrorResponse | any) {
+//     setErrorMessage(!!error.response?.data ? error.response.data.message : unsuccessMessage)
+//     return false
+//   }
+// }
+
 function submitApplication() {
   alert('Application submitted!')
 }

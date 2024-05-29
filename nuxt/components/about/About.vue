@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center gap-4">
+  <div class="flex flex-col items-center gap-16 md:flex-row md:gap-4">
     <!-- <div class="profile"> -->
-    <div class="h-full lg:h-full lg:w-1/3 relative">
+    <div class="h-full lg:h-full lg:w-1/3 relative min-w-[300px]">
       <img src="@/assets/images/hero.png" alt="" fill class="object-contain" />
     </div>
     <!-- </div> -->

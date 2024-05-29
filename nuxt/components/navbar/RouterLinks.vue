@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { appLinks } from '@/utils/constants';
+import { appLinks } from '@/utils/constants/appLinks';
 </script>
 
 <template>
@@ -21,7 +21,7 @@ import { appLinks } from '@/utils/constants';
   }
 }
 a {
-  border: 1px solid #000000;
+  border: 1px solid transparent;
 }
 
 a.router-link-exact-active {

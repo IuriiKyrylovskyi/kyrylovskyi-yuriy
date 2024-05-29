@@ -7,7 +7,7 @@ import { Routes } from '~/interfaces/global';
     <img src="@/assets/images/hero.png" alt="" fill class="object-contain" />
   </div>
   <div
-    class="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center"
+    class="h-1/2 lg:h-full lg:w-1/2 flex flex-col gap-8 items-center justify-center my-8"
   >
     <h1 class="text-4xl md:text-6xl font-bold">
       Crafting Digital Experiences, Designing Tomorrow.

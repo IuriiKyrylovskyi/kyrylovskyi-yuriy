@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { toRefs } from 'vue';
 import { Motion } from '@oku-ui/motion';
-import { appLinks } from '@/utils/constants';
+import { appLinks } from '@/utils/constants/appLinks';
 import {
   bottomVariants,
   centerVariants,

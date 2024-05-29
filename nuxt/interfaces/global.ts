@@ -14,3 +14,8 @@ export enum RouteNames {
   CONTACT = 'Contact me',
   HELP = 'Help UKRAINE',
 }
+
+export interface IData {
+  question: string;
+  emailFrom: string;
+}

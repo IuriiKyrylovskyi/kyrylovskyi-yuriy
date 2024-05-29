@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { errorTable } from '@/utils/constants';
+import { errorTable } from '@/utils/constants/errorTable';
 import PageContainer from '@/components/common/PageContainer.vue';
 import { Routes } from '@/interfaces/global';
 import { RouterLink } from 'vue-router';
